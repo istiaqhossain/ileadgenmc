@@ -1,0 +1,126 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* ileadgenmc--hellobar--wrapper start  */
+
+.ileadgenmc--hellobar--wrapper {
+    background-color: #999;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    min-height: 70px;
+    text-align: center;
+    transition: all 0.4s ease;
+    transform: translateY(0%);
+}
+.ileadgenmc--hellobar--wrapper.hide--hellobar {
+    transform: translateY(100%);
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form{
+    padding: 15px;
+    position: relative;
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form .hellobar--form--upper{ 
+    
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form p{
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 20px 0 0;
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form form{
+	display: inline-block;
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form input[type="email"]{
+    font-size: 14px;
+    line-height: 21px;
+    height: 40px;
+    width: 250px;
+    padding: 0 10px;
+    border-radius: 1px;
+    border: 0px solid;
+    margin: 0 10px 0 0;
+    outline: none;
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form button[type="submit"]{
+    outline: none;
+	font-size: 16px;
+    line-height: 24px;
+    border: 0px solid;
+    background-color: #ddd;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 1px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form button[type="submit"]:hover{
+    background-color: #fff; 
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form .hellobar--form--lower{ 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0px;
+    visibility: hidden;
+    opacity: 0;
+}
+.ileadgenmc--hellobar--wrapper .hellobar--form .hellobar--form--lower p{
+    margin: 0;
+    line-height: 40px;
+} 
+.ileadgenmc--hellobar--action {
+    position: fixed;
+    bottom: 0;
+    background-color: #999;
+    padding: 20px;
+    cursor: pointer;
+}
+.ileadgenmc--hellobar--action span{
+    display: block;
+}
+.ileadgenmc--hellobar--action span svg{
+    width: 25px;
+    height: 25px;
+    transition: all 0.4s ease;
+}
+.ileadgenmc--hellobar--action.hide--hellobar span svg {
+    transform: rotate(180deg);
+}
+.ileadgenmc--hellobar--action span svg path {
+    fill: #fff;
+}
+
+@media screen and (max-width: 991px) {
+   .ileadgenmc--hellobar--wrapper .hellobar--form input[type="email"] {
+        width: 180px;
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    .ileadgenmc--hellobar--wrapper .hellobar--form p {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+    .ileadgenmc--hellobar--wrapper .hellobar--form input[type="email"] {
+        width: 250px;
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .ileadgenmc--hellobar--action {
+        padding: 10px;
+    }
+    .ileadgenmc--hellobar--action span svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ileadgenmc--hellobar--wrapper end  */
